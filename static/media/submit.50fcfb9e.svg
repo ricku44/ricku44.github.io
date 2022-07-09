@@ -1,0 +1,107 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+    <style type="text/css">
+        .trans {
+            transform-origin: 50% 50%;
+            transform: rotate(180deg);
+        }
+        .trans2 {
+            transform-origin: 40.8% 45.5%;
+            transform: scale(-1,-1);
+        }
+        .svg {
+            animation: appear 2.5s linear infinite;
+            opacity: 0;
+        }
+        @keyframes appear {
+            21%{
+                opacity: 0;
+            }
+            22%{
+                opacity: 1;
+            }
+            99%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .svg2 {
+            animation: appear2 2.5s linear infinite;   
+            opacity: 0; 
+        }
+        @keyframes appear2 {
+            40%{
+                opacity: 0;
+            }
+            41%{
+                opacity: 1;
+            }
+            99%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        .svg3 {
+            animation: appear3 2.5s linear infinite; 
+            opacity: 0;   
+        }
+        @keyframes appear3 {
+            0%{
+                opacity: 0;
+            }
+            60%{
+                opacity: 0;
+            }
+            61%{
+                opacity: 1;
+            }
+            99%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+    </style>
+    <linearGradient id="red-fill" x1="0.5" y1="1" x2="0.5" y2="0">
+        <stop offset="100%" stop-opacity="1" stop-color="#1d8102">
+            <animate id="op" attributeName="offset" values="0;1" dur="0.5s" begin="0s;op.end+2s"/>
+        </stop>
+        <stop offset="100%" stop-opacity="0" stop-color="#1d8102">
+            <animate id="op2" attributeName="offset" values="0;1" dur="0.5s"  begin="0s;op2.end+2s"/>
+        </stop>
+    </linearGradient>
+    <linearGradient id="red-fill1" x1="0.5" y1="1" x2="0.5" y2="0">
+        <stop offset="100%" stop-opacity="1" stop-color="#1d8102">
+            <animate id="op1" attributeName="offset" values="0;1" dur="0.5s" begin="0.5s;op1.end+2s"/>
+        </stop>
+        <stop offset="100%" stop-opacity="0" stop-color="#1d8102">
+            <animate id="op21" attributeName="offset" values="0;1" dur="0.5s"  begin="0.5s;op21.end+2s"/>
+        </stop>
+    </linearGradient>
+    <linearGradient id="red-fill2" x1="0.5" y1="1" x2="0.5" y2="0">
+        <stop offset="100%" stop-opacity="1" stop-color="#1d8102">
+            <animate id="op02" attributeName="offset" values="0;1" dur="0.5s" begin="1s;op02.end+2s"/>
+        </stop>
+        <stop offset="100%" stop-opacity="0" stop-color="#1d8102">
+            <animate id="op22" attributeName="offset" values="0;1" dur="0.5s"  begin="1s;op22.end+2s"/>
+        </stop>
+    </linearGradient>
+    <linearGradient id="red-fill3" x1="0.5" y1="1" x2="0.5" y2="0">
+        <stop offset="100%" stop-opacity="1" stop-color="#1d8102">
+            <animate id="op3" attributeName="offset" values="0;1" dur="0.5s" begin="1.5s;op3.end+2s"/>
+        </stop>
+        <stop offset="100%" stop-opacity="0" stop-color="#1d8102">
+            <animate id="op23" attributeName="offset" values="0;1" dur="0.5s"  begin="1.5s;op23.end+2s"/>
+        </stop>
+    </linearGradient>
+    <g>
+        <path class="svg3" fill="url(#red-fill3)" d="M 12 0 m 7 7.457 l -9.005 9.565 v -1.5 l 0.005 0 l 8.24 -8.752 l 0.728 0.685 z" />
+        <path class="trans2 svg2" fill="url(#red-fill2)" d="M 12 0 m 3 11.15 l -5.5 -6.15 v 1.4 l 0 0 l 4.8 5.4 z" />
+        <path class="svg" fill="url(#red-fill1)" d="M 12 0 c 6.623 0 12 5.377 12 12 s -5.377 12 -12 12 v -1 c 6 0 11 -6 11 -11 c 0 -6 -5 -11 -11 -11 v -1 z" />
+        <path class="trans" fill="url(#red-fill)" d="M 12 0 c 6.623 0 12 5.377 12 12 s -5.377 12 -12 12 v -1 c 6 0 11 -6 11 -11 c 0 -6 -5 -11 -11 -11 v -1 z" />
+    </g>
+</svg>
