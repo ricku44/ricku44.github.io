@@ -35,10 +35,10 @@
 </linearGradient>
 <linearGradient id="red-fill2" x1="0.5" y1="1" x2="0.5" y2="0">
     <stop offset="100%" stop-opacity="1" stop-color="#FF9900">
-        <animate id="op1" attributeName="offset" values="0;1" dur="2s" begin="2s;op1.end+3s"/>
+        <animate id="op1" attributeName="offset" values="0;1" dur="1s" begin="2s;op1.end+4s"/>
     </stop>
     <stop offset="100%" stop-opacity="0" stop-color="#FF9900">
-        <animate id="op21" attributeName="offset" values="0;1" dur="2s"  begin="2s;op21.end+3s"/>
+        <animate id="op21" attributeName="offset" values="0;1" dur="1s"  begin="2s;op21.end+4s"/>
     </stop>
 </linearGradient>
 <g>
